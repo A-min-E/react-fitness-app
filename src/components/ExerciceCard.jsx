@@ -4,8 +4,14 @@ import { Button, Stack, Typography } from "@mui/material";
 
 const ExerciceCard = ({ exercise }) => {
   return (
-    <Link className="exercise-card" to={`/exercise/${exercise.id}`}>
-      <img src={exercise.gitUrl} alt={exercise.name} />
+    <Link
+      className="exercise-card"
+      to={`/exercise/${exercise.id}`}
+      onClick={() => {
+        window.scrollTo({ top: 0, left: 100, behavior: "smooth" });
+      }}
+    >
+      <img src={exercise.gifUrl} alt={exercise.name} />
       <Stack direction="row">
         <Button
           sx={{

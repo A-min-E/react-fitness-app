@@ -32,6 +32,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
     );
     setSearch("");
     setExercises(serachedExercises);
+    window.scrollTo({ top: 1800, behavior: "smooth" });
   };
   // 56:42
   return (
